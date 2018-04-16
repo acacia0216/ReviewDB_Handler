@@ -1,0 +1,7 @@
+/search.do=kr.co.bit.handler.SearchHandler
+/searchAll.do=kr.co.bit.handler.SearchAllHandler
+/viewRegist.do=kr.co.bit.handler.viewRegistHandler
+/regist.do=kr.co.bit.handler.RegistHandler
+/searchDong.do=kr.co.bit.handler.SearchDongHandler
+/home.do=kr.co.bit.handler.HomeHandler
+/openZipcode.do=kr.co.bit.handler.openZipcodeHandler
