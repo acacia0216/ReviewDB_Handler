@@ -5,3 +5,6 @@
 /searchDong.do=kr.co.bit.handler.SearchDongHandler
 /home.do=kr.co.bit.handler.HomeHandler
 /openZipcode.do=kr.co.bit.handler.openZipcodeHandler
+/openId.do=kr.co.bit.handler.openIdHandler
+/idCheck.do=kr.co.bit.handler.idCheckHandler
+/delete.do=

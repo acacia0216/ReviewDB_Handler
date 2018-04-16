@@ -24,7 +24,7 @@ public class CommandController extends HttpServlet{
 	
 	@Override					//request는 누가 넣어주는가? default값이 무엇인가? 혹시 null은 아닌가?
 	protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-		/*request.setCharacterEncoding("UTF-8"); */
+		request.setCharacterEncoding("UTF-8");
 		
 		String cmd = request.getParameter("cmd");
 		cmd= cmd==null?cmd="":cmd;

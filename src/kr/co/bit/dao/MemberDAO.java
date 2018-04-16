@@ -44,7 +44,7 @@ public class MemberDAO {
 			int affectedCount = stmt.executeUpdate(); // affectedCount - 삽입이 실행 되면 1이됨
 			if(affectedCount>0){
 				flag=true;
-				System.out.println("삽입완료");
+				System.out.println("등록완료");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

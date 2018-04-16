@@ -56,7 +56,7 @@
 	String id = request.getParameter("id");
 %>	
 ID check
-<form action="./controller?cmd=searchId" method="post">
+<form action="./idCheck.do" method="post">
 	<br>
 	<%
 	MemberVO vo=(MemberVO)request.getAttribute("vo");

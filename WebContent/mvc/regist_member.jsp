@@ -23,7 +23,7 @@
 	function id_check(){
 		//alert("success");
 		//var checkid = document.getElementById("userid").value;
-		window.open("./controller?cmd=openID","","width=300px height=200px");
+		window.open("./openId.do","","width=300px height=200px");
 		return false;
 	}
 	function id_check_with_ajax(val){
