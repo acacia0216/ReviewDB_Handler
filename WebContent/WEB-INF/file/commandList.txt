@@ -7,4 +7,6 @@
 /openZipcode.do=kr.co.bit.handler.openZipcodeHandler
 /openId.do=kr.co.bit.handler.openIdHandler
 /idCheck.do=kr.co.bit.handler.idCheckHandler
-/delete.do=
+/delete.do=kr.co.bit.handler.deleteHandler
+/viewUpdate.do=kr.co.bit.handler.viewUpdateHandler
+/update.do=kr.co.bit.handler.UpdateHandler

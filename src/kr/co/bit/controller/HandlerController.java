@@ -91,7 +91,12 @@ public class HandlerController extends HttpServlet{
 												*/
 		System.out.println("in "+url);
 		Command cmd =map.get(url);
-		 String toUrl  =  cmd.process(request);
+		String toUrl ="";
+		if(cmd==null) {
+			toUrl = "./home.do";
+		} else {
+		    toUrl = cmd.process(request);
+		}
 	
 		 //request 영역을 process 메소드로 공유해준다. process 메소드에서 작업한 set 은 controller 페이지의 request와 공유된다.(당연) , 다음 이동할 페이지의 url을 리턴 받아온다.
 		RequestDispatcher rd = request.getRequestDispatcher(toUrl);

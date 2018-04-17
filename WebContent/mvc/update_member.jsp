@@ -146,6 +146,13 @@
 		alert(flag);
 		
 	}
+	
+	
+	function goHome(){
+		
+		location.href("./home.do");
+		return false;
+	}
 </script>
 </head>
 <body>
@@ -175,7 +182,7 @@
 	
 	
 %>
-<form action="./controller?cmd=update" method="post" enctype="application/x-www-form-urlencoded">
+<form action="./update.do" method="post" enctype="application/x-www-form-urlencoded">
 <table>
 	<tr>
 		<td>아이디</td>
@@ -225,8 +232,11 @@
 			<option value="4" <%=vo.getProject().equals("4")?"selected":"" %>>7회이상
 		</select>
 		</td><td><button onclick="return select_check()">select 체크</button></td><td></td></tr>
+	
+	<tr><td></td><td> </td><td></td><td></td></tr>
+	<tr><td></td><td> </td><td></td><td></td></tr>
 	<tr>
-		<td colspan="4"><input type="submit" value="수정" ></td>
+		<td></td><td><input type="submit" value="수정" >   <button onclick="return goHome()"><%="처음으로"%></button></td><td></td>
 		
 	</tr>
 </table>	

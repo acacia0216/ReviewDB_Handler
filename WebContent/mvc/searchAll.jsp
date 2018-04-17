@@ -10,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 
+
 <style type="text/css">
 
 	#del{
@@ -25,9 +26,9 @@
 	StringBuffer sb = new StringBuffer();
 	for(MemberVO vo : list ) {
 		
-		sb.append( "<form action= './controller?cmd=delete&id=" + vo.getId() + "' method = 'post'>");
+		sb.append( "<form action= './delete.do?id=" + vo.getId() + "' method = 'post'>");
 		sb.append(vo.getId());
-		sb.append(" <a href='./controller?cmd=updatePage&id="+vo.getId()+"'>"+vo.getName()+"</a>");
+		sb.append(" <a href='./viewUpdate.do?id="+vo.getId()+"'>"+vo.getName()+"</a>");
 		sb.append(" "+vo.getAddr1());
 		sb.append(" <input type='submit' value= '삭제' id='del'></input> </form> <br>");
 
